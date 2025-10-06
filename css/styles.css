@@ -1,0 +1,442 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*estilos de Top-header */
+.top-header {
+  display: flex;
+  align-content: center;
+  justify-content: none;
+  height: 35px;
+  margin-top: 10px;
+  background-color: rgb(232, 232, 232);
+}
+.top-header .theader-item {
+  padding: 5px;
+  margin-left: 15px;
+}
+.top-header .iniciar {
+  padding: 5px;
+  border: none;
+  background-color: rgb(232, 232, 232);
+}
+.top-header .registro {
+  padding: 5px;
+  border: none;
+  background-color: rgb(232, 232, 232);
+}
+
+/*estilos de Header */
+.header .buscar {
+  width: 40%;
+}
+.header .fav {
+  width: 60px;
+}
+.header .carro {
+  width: 60px;
+}
+.header .header img {
+  width: 30%;
+}
+.header .header input {
+  border-radius: 15px;
+}
+
+/*estilos de Nav */
+.nav .paginas {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+}
+.nav .menu {
+  font-weight: bold;
+}
+
+.btn btn-secondary dropdown-toggle {
+  background-color: rgb(232, 232, 232);
+}
+
+h1 {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  color: darkred;
+}
+
+.fotos-portada img {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/*estilos de Main */
+.main .barra {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-color: rgb(232, 232, 232);
+  height: 60px;
+  align-items: center;
+}
+.main .barra .item-barra {
+  margin: 35px;
+}
+.main .cards {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-left: 1rem;
+}
+.main h4 {
+  text-align: center;
+  padding: 2rem;
+  width: 1fr;
+}
+.main .prov {
+  width: 100px;
+  margin: 1rem;
+}
+.main .img-prov {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+/*estilos de pre-footer */
+.pre-footer {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.pre-footer button {
+  border: none;
+  background-color: white;
+  padding: 5px;
+  font-weight: bold;
+}
+.pre-footer input {
+  border-radius: 10px;
+  width: 40%;
+}
+
+/*estilos de footer */
+.footer {
+  display: flex;
+  align-content: center;
+  justify-content: space-arround;
+  background-color: rgb(232, 232, 232);
+  margin: 1rem;
+  align-items: center;
+}
+
+.footer-nav_items {
+  list-style-type: none;
+  color: black;
+  text-decoration: none;
+  color: solid black;
+}
+
+.footer a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+.footer a:hover .contacto {
+  text-align: center;
+}
+.footer a:hover .class {
+  width: 50%;
+}
+.footer a:hover .form-item {
+  margin: 1rem;
+}
+.footer a:hover input[type=text] {
+  width: 500px;
+  height: 70px;
+  padding: 10px;
+}
+.footer a:hover .send {
+  border: none;
+  background-color: white;
+  padding: 5px;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.sa {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.grid-container {
+  display: flex;
+}
+
+.grid-container {
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat 4, 1fr;
+  grid-template-rows: repeat 7, auto;
+  gap: 10px;
+  grid-template-areas: "top-header top-header top-header top-header" "header header header header" "nav nav nav nav" "h1 h1 h1 h1" "fotos-portada fotos-portada fotos-portada fotos-portada" "main main main main" "pre-footer pre-footer pre-footer pre-footer" "footer footer footer footer ";
+}
+
+.top-header {
+  grid-area: top-header;
+}
+
+.header {
+  grid-area: header;
+}
+
+.navegacion {
+  grid-area: navegacion;
+}
+
+.fotos-portada {
+  grid-area: fotos-portada;
+}
+
+h1 {
+  grid-area: h1;
+}
+
+.main {
+  grid-area: main;
+}
+
+.pre-footer {
+  grid-area: pre-footer;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.navegacion {
+  grid-column: 3/3;
+}
+
+.ofertas {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.cards-ofertas {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: 1rem;
+  margin-top: 2rem;
+}
+
+.form-contacto {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.form-contacto .form-item {
+  margin: 1rem;
+  border-radius: 15px;
+}
+
+.titulo-cal {
+  text-align: center;
+  padding: 40px;
+  margin-top: 0%;
+}
+
+.imagen-cal {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.img-cal {
+  width: 60%;
+  border: 1px solid black;
+}
+
+.text-nosotros {
+  font-size: 20px;
+  text-align: justify;
+  width: 1fr;
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen-cal {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.imagen-cal .img-cal {
+  justify-content: center;
+}
+
+/* mq MOVIL */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+.top-header {
+  display: wrap;
+}
+
+.header header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+}
+
+.header img {
+  width: 150px;
+  margin-bottom: 1rem;
+}
+
+.header .buscar {
+  width: 90%;
+}
+
+.nav {
+  text-align: center;
+}
+
+.nav .paginas {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.nav .paginas li {
+  margin-bottom: 0.5rem;
+}
+
+.fotos-portada img {
+  width: 100%;
+  height: auto;
+}
+
+.main .cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main .cards .card {
+  width: 90%;
+  margin-bottom: 1rem;
+}
+
+.img-prov {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.img-prov img {
+  max-width: 100px;
+  height: auto;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+}
+
+.footer .footer-nav,
+.footer .redes {
+  margin-bottom: 1rem;
+}
+
+.footer-nav_items {
+  padding: 0;
+  list-style: none;
+}
+
+/* mq TABLET*/
+@media (min-width: 768px) {
+  .top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+  }
+  .header header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .header .buscar {
+    flex-grow: 1;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .nav .paginas {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .nav .paginas li {
+    margin-bottom: 0;
+  }
+  .main .cards {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .footer-nav {
+    text-align: left;
+  }
+}
+/* mq. Computadora */
+@media (min-width: 992px) {
+  .grid-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .header header {
+    padding: 1rem 0;
+  }
+  .header .buscar {
+    width: auto;
+  }
+  .img-prov {
+    flex-wrap: nowrap;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding: 2rem 0;
+  }
+  .footer .footer-nav,
+  .footer .redes {
+    margin-right: 2rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

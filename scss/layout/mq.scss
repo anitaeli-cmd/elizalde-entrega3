@@ -1,0 +1,172 @@
+/* mq MOVIL */
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr; 
+  grid-template-rows: auto;
+}
+
+.top-header {
+  display: wrap; 
+}
+
+
+.header header {
+  display: flex;
+  flex-direction:row; 
+  align-items: center;
+  padding: 1rem;
+}
+
+.header img {
+  width: 150px; 
+  margin-bottom: 1rem;
+}
+
+.header .buscar {
+  width: 90%; 
+
+}
+
+.nav {
+  text-align: center;
+}
+
+.nav .paginas {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.nav .paginas li {
+  margin-bottom: 0.5rem;
+}
+
+.fotos-portada img {
+  width: 100%; 
+  height: auto;
+}
+
+.main .cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main .cards .card {
+  width: 90%;
+  margin-bottom: 1rem;
+}
+
+
+.img-prov {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.img-prov img {
+  max-width: 100px;
+  height: auto;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+}
+
+.footer .footer-nav,
+.footer .redes {
+  margin-bottom: 1rem;
+}
+
+.footer-nav_items {
+  padding: 0;
+  list-style: none;
+}
+
+/* mq TABLET*/
+
+@media (min-width: 768px) {
+
+  .top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  .header header {
+    flex-direction: row; 
+    justify-content: space-between;
+  }
+
+  .header .buscar {
+    flex-grow: 1;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  
+
+  .nav .paginas {
+    flex-direction: row; 
+    justify-content: space-around;
+  }
+  
+  .nav .paginas li {
+    margin-bottom: 0;
+  }
+
+
+  .main .cards {
+    flex-direction: row; 
+    justify-content: center;
+    gap: 1rem;
+  }
+
+
+  .footer-nav {
+    text-align: left;
+  }
+}
+
+/* mq. Computadora */
+
+@media (min-width: 992px) {
+
+  .grid-container {
+    max-width: 1200px; 
+    margin: 0 auto;
+  }
+  
+  
+  .header header {
+    padding: 1rem 0;
+  }
+
+  .header .buscar {
+    width: auto;
+  }
+  
+  
+  .img-prov {
+    flex-wrap: nowrap; 
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding: 2rem 0;
+  }
+  
+  .footer .footer-nav,
+  .footer .redes {
+    margin-right: 2rem;
+  }
+}

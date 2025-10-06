@@ -1,0 +1,13 @@
+@use "../utilities/variables" as*;
+@use "../utilities/mixin" as*;
+
+.form-contacto {
+    @include flex (center);
+    .form-item { 
+        margin:1rem;
+        border-radius: 15px;
+      
+    }
+    
+}
+

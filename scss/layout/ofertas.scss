@@ -1,0 +1,11 @@
+@use "../utilities/variables" as*;
+@use "../utilities/mixin" as*;
+
+
+.ofertas{
+    @include flex (center)}
+    .cards-ofertas{
+    @include flex (center);
+    margin: 1rem;
+    margin-top: 2rem;
+}
