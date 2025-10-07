@@ -1,48 +1,78 @@
+@use "../utilities/variables" as*;
+@use "../utilities/mixin" as*;
+
 /* mq MOVIL */
 
+@media (max-width: 600px) { 
+  .nav {
+    display: none; 
+  }
+  .paginas{
+    display: none;
+  }
+  .menu{
+    display: none;
+  }
+.pag-menu {
+  display: none;
+}
+  .nav-mobile {
+    display: block; 
+    padding: 15px;
+    
+    button{
+    img {
+      width: 15px}
+  }
+  }
+}
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr; 
+  grid-template-columns: 1fr;
   grid-template-rows: auto;
 }
 
 .top-header {
-  display: wrap; 
- padding:5px
+  display: wrap;
+  padding: 5px
 }
 
 
 .header header {
   display: flex;
-  flex-direction:row; 
+  flex-direction: row;
   align-items: center;
   padding: 1rem;
 }
 
 .header img {
-  width: 150px; 
+  width: 150px;
 }
 
 .header .buscar {
-  width: 90%; 
+  width: 90%;
 
 }
 
 .nav {
+  display: none;
   text-align: center;
-}
+
+
+  }
 
 .nav .paginas {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   list-style: none;
- 
+  font-size: medium;
+
 }
 
 .fotos-portada img {
-  width: 100%; 
+  width: 100%;
   height: auto;
 }
 
@@ -60,7 +90,7 @@
 
 .img-prov {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
   padding: 1rem;
@@ -88,7 +118,7 @@
 
 /* mq TABLET*/
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
 
   .top-header {
     display: flex;
@@ -98,7 +128,7 @@
   }
 
   .header header {
-    flex-direction: row; 
+    flex-direction: row;
     justify-content: space-between;
   }
 
@@ -107,20 +137,32 @@
     margin-left: 2rem;
     margin-right: 2rem;
   }
-  
 
-  .nav .paginas {
-    flex-direction: row; 
-    justify-content: space-around;
+.nav {
+    display: none; 
   }
-  
-  .nav .paginas li {
-    margin-bottom: 0;
+  .paginas{
+    display: none;
+  }
+  .menu{
+    display: none;
+  }
+.pag-menu {
+  display: none;
+}
+  .nav-mobile {
+    display: block; 
+    padding: 15px;
+    
+    button{
+    img {
+      width: 15px}
+  }
   }
 
 
   .main .cards {
-    flex-direction: row; 
+    flex-direction: row;
     justify-content: center;
     gap: 1rem;
   }
@@ -136,11 +178,11 @@
 @media (min-width: 992px) {
 
   .grid-container {
-    max-width: 1200px; 
+    max-width: 1200px;
     margin: 0 auto;
   }
-  
-  
+
+
   .header header {
     padding: 1rem 0;
   }
@@ -148,10 +190,23 @@
   .header .buscar {
     width: auto;
   }
-  
-  
+
+  .nav {
+    display: block; 
+  }
+  .nav-mobile {
+    display: none; 
+  }
+.pag-menu{
+     @include flex (center);
+        align-items: center;
+        margin: 2rem;
+        text-decoration: none;
+        list-style-type: none;
+        color: $color-principal
+}
   .img-prov {
-    flex-wrap: nowrap; 
+    flex-wrap: nowrap;
   }
 
   .footer {
@@ -160,7 +215,7 @@
     text-align: left;
     padding: 2rem 0;
   }
-  
+
   .footer .footer-nav,
   .footer .redes {
     margin-right: 2rem;
