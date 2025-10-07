@@ -5,7 +5,7 @@
 
 .top-header {
     @include flex (none);
-    height: 35px;
+    height: 50px;
     margin-top: 10px;
     background-color: $bg-secundario;
    
@@ -30,6 +30,7 @@
 .header{
     .buscar{
     width:40%;
+   border-radius: 15px;
 }
     .fav{
     width: 60px;
@@ -37,7 +38,9 @@
     .carro{
     width: 60px;
 }
-
+   .header-logo{
+    width: 40%;
+   }
 .header img{
    width: 30%;
 }
@@ -54,8 +57,8 @@
     align-items:center;
     margin: 2rem;
     text-decoration: none;
-     list-style-type: none;
-     color: $color-principal }
+    list-style-type: none;
+    color: $color-principal }
 
     .menu{
     font-weight: bold;}
@@ -84,10 +87,11 @@ margin-bottom: 1rem;
         background-color:$bg-secundario;
         height: 60px;
         align-items: center;
+        text-align: center;
+        text-shadow: 12px;
         .item-barra{
-            margin: 35px;
+        margin: 35px;
         }
-       
     }
 
         .cards{
@@ -112,6 +116,7 @@ margin-bottom: 1rem;
 
 .pre-footer {
     @include flex (center);
+    text-align: center;
 
     button { 
         border: none;
@@ -143,9 +148,7 @@ margin-bottom: 1rem;
     color: $color-principal; }
 
 .footer a:hover {
-    text-decoration: underline; 
-    
-    
+    text-decoration: underline;  
          
     .contacto{
    text-align: center;
@@ -172,14 +175,11 @@ margin-bottom: 1rem;
     font-weight: bold;
     margin: 5px;
     }
-
 }
 
 .sa{
 @include flex (center)
-  
 }
-
 
 .grid-container{
     display: flex;

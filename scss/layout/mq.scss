@@ -9,6 +9,7 @@
 
 .top-header {
   display: wrap; 
+ padding:5px
 }
 
 
@@ -21,7 +22,6 @@
 
 .header img {
   width: 150px; 
-  margin-bottom: 1rem;
 }
 
 .header .buscar {
@@ -38,11 +38,7 @@
   flex-wrap: wrap;
   align-items: center;
   list-style: none;
-  padding: 0;
-}
-
-.nav .paginas li {
-  margin-bottom: 0.5rem;
+ 
 }
 
 .fotos-portada img {
@@ -98,7 +94,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1rem;
+    padding: 1rem;
   }
 
   .header header {
