@@ -74,6 +74,7 @@ h1 {
   justify-content: center;
   text-align: center;
   color: darkred;
+  padding: 15px;
 }
 
 .fotos-portada img {
