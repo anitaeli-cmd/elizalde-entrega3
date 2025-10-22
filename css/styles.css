@@ -103,7 +103,7 @@ h1 {
   justify-content: center;
   margin-left: 1rem;
 }
-.main h4 {
+.main h2 {
   text-align: center;
   padding: 2rem;
   width: 1fr;
@@ -277,6 +277,10 @@ h1 {
 .img-cal {
   width: 60%;
   border: 1px solid black;
+}
+
+.h3-cal {
+  font-size: 20px;
 }
 
 .text-nosotros {
