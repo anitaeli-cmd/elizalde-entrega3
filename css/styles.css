@@ -68,6 +68,15 @@
   background-color: rgb(232, 232, 232);
 }
 
+.btn-color {
+  background-color: rgb(232, 232, 232);
+  color: darkred;
+  text-decoration: none;
+  border-radius: 15px;
+  padding: 10px;
+  margin-left: 50px;
+}
+
 h1 {
   display: flex;
   align-content: center;
@@ -161,21 +170,21 @@ h1 {
 .footer a:hover {
   text-decoration: underline;
 }
-.footer a:hover .contacto {
+.footer .contacto {
   text-align: center;
 }
-.footer a:hover .class {
+.footer .class {
   width: 50%;
 }
-.footer a:hover .form-item {
+.footer .form-item {
   margin: 1rem;
 }
-.footer a:hover input[type=text] {
+.footer input[type=text] {
   width: 500px;
   height: 70px;
   padding: 10px;
 }
-.footer a:hover .send {
+.footer .send {
   border: none;
   background-color: white;
   padding: 5px;

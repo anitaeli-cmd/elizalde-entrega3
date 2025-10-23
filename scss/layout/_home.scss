@@ -78,6 +78,14 @@
     background-color: $bg-secundario;
 }
 
+.btn-color{
+    background-color:$bg-secundario;
+    color: $color-secundario;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 10px;
+   margin-left: 50px;
+}
 h1 {
     @include flex (center);
     text-align: center;
@@ -168,8 +176,12 @@ h1 {
     color: $color-principal;
 }
 
-.footer a:hover {
-    text-decoration: underline;
+.footer {
+  a {
+    &:hover {
+      text-decoration: underline;
+  }
+}
 
     .contacto {
         text-align: center;
